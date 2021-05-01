@@ -1,0 +1,306 @@
+/* Code generale */
+
+@font-face {
+    font-family: 'Raleway Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Raleway Regular'), url('font/Raleway-Regular.woff') format('woff');
+    }
+   
+*{
+    font-family: 'Raleway Regular', Arial, sans-serif;
+}   
+
+#bloc-page{
+    width: 900px;
+    margin: auto;
+}
+
+h1{
+    font-size: 18px;
+}
+
+h2{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 10px;
+}
+
+
+
+/* Header */
+
+.logo-reservia{
+    width:55px;
+}
+
+header{   
+    display: flex;
+    justify-content: space-between;
+    padding: 26px; /* Pour avoir de la hauteur dessus les li */
+    /* padding doit être bien règler avec padding-top de a:hover */
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+  
+}
+
+nav li{
+    margin-right: 35px;
+    font-size: 13px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    border-top: 3px solid #00FC;
+    color: #0065FC;
+    padding-top: 48px;
+}
+
+.nav-sinscrire{
+    color: #0065FC;
+    font-weight: bold;
+}
+
+/*-- Recherche--*/
+
+
+.icone_location{
+    border: 2px solid #F2F2F2;
+    padding:9px;
+    border-top:2.1px solid #F2F2F2;
+    border-bottom:2.2px solid #F2F2F2;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    background-color: #F2F2F2;
+}
+
+.search-bar2{
+    width: 160px;
+    border:1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    margin:4px 0;
+    outline:none;
+    padding-top:7px;
+    padding-bottom:9.5px;
+    box-sizing:border-box;
+
+}
+.button{
+    width: 100px;
+    border:1px solid #0065FC;
+    border-bottom: 3.5px solid #0065FC;
+    margin:4px 0;
+    outline:none;
+    padding:7px;
+    box-sizing:border-box;
+    background-color: #0065FC;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Filtres Test */
+.filtres-nav{
+    display: flex;
+}
+
+.filtre-h2{
+    margin-top: 18px;
+}
+
+.filtres-nav ul{
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.filtres-nav li{
+    margin-right: 35px;
+}
+
+.filtres-button{
+    text-decoration: none;
+    color: black;
+    border: 1px solid #c5c3c3;
+    border-radius: 40px;
+    padding: 13px 17px 13px 55px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.filtres-button:hover{
+    border: 0px solid red;
+    border-radius: 40px;
+    padding: 13px 17px 13px 55px;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px 1px silver;
+    text-shadow: 0px 0px 5px  black;
+    color: black;
+   
+    
+}
+
+/* Filtres */
+
+.container{
+    
+    display: flex;
+    margin: 15px;
+    margin-left: -1px;
+}
+
+.filtres{
+    margin-right: 20px;
+    padding-top: 22px;
+}
+
+/* Économique */
+.filter-eco{
+    display: flex;
+    margin: 20px;
+    padding: 4px;
+    height: 33px;
+    width: 140px;
+    border: 1px solid #c5c3c3;
+    border-radius: 40px;
+    position: relative;
+}
+
+
+.filter-icon {
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 40px;
+    margin: -5px 0  0 -5px ; /* a voir */
+    width: 40.5px;
+    height: 40.5px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+}
+.filter-eco .filter-icon {
+    
+    background-image:url('images/icones/billet.png') ;
+    
+    /* a voir */
+}
+
+.filter-familial .filter-icon {
+    
+    background-image:url('images/icones/personne.png') ;
+    
+    /* a voir */
+}
+
+.economique{
+    border: 1px solid white;
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 80px;
+    font-weight: bold;
+}
+.container :hover{
+    color: rgb(251, 2, 2);
+    font-size: 13px;
+    text-shadow: 0px 0px 5px   rgb(105, 235, 30);
+    border-top-right-radius: 250px;
+    
+}
+    
+
+
+/* Familial */
+.item2{
+    display: flex;
+    margin: 20px;
+    padding: 4px;
+    height: 33px;
+    width: 115px;
+    border: 1px solid #c5c3c3;
+    border-radius: 40px;
+    position: relative;
+}
+
+
+
+.familial{
+    border: 1px solid white; 
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 50px;
+    font-weight: bold;
+}
+
+/* Romantique */
+.item3{
+    display: flex;
+    margin: 20px;
+    padding: 4px;
+    height: 33px;
+    width: 140px;
+    border: 1px solid #c5c3c3;
+    border-radius: 40px;
+    position: relative;
+}
+
+.rom{
+   
+    background-image:url('images/icones/coeur.png') ;
+   
+    
+    
+}
+.romantique{
+    border: 1px solid white;
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 80px;
+    font-weight: bold;
+}
+
+/* Animaux autorisés */
+.item4{
+    display: flex;
+    margin: 20px;
+    padding: 4px;
+    height: 33px;
+    width: 180px;
+    border: 1px solid #c5c3c3;
+    border-radius: 40px;
+    position: relative;
+}
+
+.ani{
+    
+    background-image:url('images/icones/chien.png') ;
+    
+    
+}
+.animaux{
+    border: 1px solid white;
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 115px;
+    font-weight: bold;
+}
+
+.info{
+    display: flex;
+}
+
+.i_info{
+    margin-top:8px;
+}
+
+
+  
+    

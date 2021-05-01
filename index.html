@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Reservia</title>
+  </head>
+
+  <body>
+    <div id="bloc-page">
+
+      <!-- HEADER -->
+      <header>
+        <div>
+          <img class="logo-reservia" src="images/logo/reservia@3x.png" alt="Logo de Reservia"  />
+        </div>
+        <nav>
+          <ul>
+            <li><a class="nav-hebergement" href="#">Hébergements</a></li>
+            <li><a class="nav-activites" href="#">Activités</a></li>
+            <li><a class="nav-sinscrire" href="#">S'inscrire</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+
+      <!-- MAIN -->
+      <main id="main">
+
+      <!-- Recherche -->
+      <section>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre de ville ou en pleine nature</p>
+
+        <form method="get" action="traitement.php">
+            <p><span class="icone_location"><img src="images/icones/geo_ic.png"
+               alt="icone localisation" width="16px"/></span><input class="search-bar2"
+               type="search"  placeholder=" Marseille, France" size="40" maxlength="10"
+                /><input class="button" type="submit" value="Recherche" /></p>
+        </form>
+
+      <!-- Filtres Test -->  
+      <div class="filtres-nav ">
+        <h2 class="filtre-h2">Filtres</h2>
+        <ul>
+          <li><a class="filtres-button" href="#">Économique</a></li>
+          <li><a class="filtres-button" href="#">Familial</a></li>
+          <li><a class="filtres-button" href="#">Romantique</a></li>
+          <li><a class="filtres-button" href="#">Animaux autorisés</a></li>
+        </ul>
+      </div>
+
+      <!-- Filtres -->  
+      <div class="container">
+        <h2 class="filtres">Filtres</h2>
+
+        <div class=" filter-eco">
+          <span class="filter-icon"></span>
+          <span><input class="economique" type="sublit" value="Économique" /></span>
+        </div>
+
+        <div class="item2 filter-familial">
+          <span class=" filter-icon"></span>
+          <span><input class="familial" type="sublit" value="Familial" /></span>
+        </div>
+
+        <div class="item3">
+          <span class="rom filter-icon"></span>
+          <span><input class="romantique" type="sublit" value="Romantique" /></span>
+        </div>
+
+        <div class="item4">
+          <span class="ani filter-icon"></span>
+          <span><input class="animaux" type="sublit" value="Animaux autorisés" /></span>
+        </div>
+
+      </div>
+
+      <div class="info">
+        <span><img class="i_info" src="images/icones/info.png" alt="Logo information" width="16px"></span>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+      </div>
+    
+
+      <!-- Hébergements -->
+      <section>
+        <div class="hebergements">
+
+        </div>
+
+        <div class="les_plus_populaires">
+
+        </div>
+      </section>
+      
+      <!-- Activité à Marseille -->
+        <div class="vieux_port"></div>
+        <div class="fort_iles"></div>
+        <div class="parc_national"></div>
+        <div class="notre_dame_etparc"></div>
+      
+      </main>
+
+      <!-- FOOTER-->
+      <footer>
+        <div class="a_propos"></div>
+        <div class="nos_hebergements"></div>
+        <div class="assistance"></div>
+      </footer>
+
+    </div>
+  </body>
+</html>
