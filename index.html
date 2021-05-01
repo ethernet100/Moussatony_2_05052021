@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/4e707dab61.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
   </head>
 
@@ -34,21 +35,30 @@
         <p>En plein centre de ville ou en pleine nature</p>
 
         <form method="get" action="traitement.php">
-            <p><span class="icone_location"><img src="images/icones/geo_ic.png"
-               alt="icone localisation" width="16px"/></span><input class="search-bar2"
+            <p><span class="icon-location"><i class="fas fa-map-marker-alt"></i></span><input class="search-bar2"
                type="search"  placeholder=" Marseille, France" size="40" maxlength="10"
                 /><input class="button" type="submit" value="Recherche" /></p>
         </form>
 
       <!-- Filtres Test -->  
-      <div class="filtres-nav ">
+      <div class="filter-bloc">
         <h2 class="filtre-h2">Filtres</h2>
-        <ul>
-          <li><a class="filtres-button" href="#">Économique</a></li>
-          <li><a class="filtres-button" href="#">Familial</a></li>
-          <li><a class="filtres-button" href="#">Romantique</a></li>
-          <li><a class="filtres-button" href="#">Animaux autorisés</a></li>
-        </ul>
+        <div class="filter-buttom">
+          <span class="filter-icon"><i class="fas fa-money-bill-wave"></i></span>
+          <span><a class="filter-text" href="#">Économique</a></span>
+        </div>
+        <div class="filter-buttom">
+          <span class="filter-icon"><i class="fas fa-child"></i></span>
+          <span><a class="filter-text" href="#">Familial</a></span>
+        </div>
+        <div class="filter-buttom">
+          <span class="filter-icon"><i class="fas fa-heart"></i></span>
+          <span><a class="filter-text" href="#">Romantique</a></span>
+        </div>
+        <div class="filter-buttom">
+          <span class="filter-icon"><i class="fas fa-dog"></i></span>
+          <span><a class="filter-text" href="#">Animaux autorisés</a></span>
+        </div>
       </div>
 
       <!-- Filtres -->  

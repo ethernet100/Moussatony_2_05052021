@@ -74,14 +74,11 @@ a:hover {
 /*-- Recherche--*/
 
 
-.icone_location{
-    border: 2px solid #F2F2F2;
-    padding:9px;
-    border-top:2.1px solid #F2F2F2;
-    border-bottom:2.2px solid #F2F2F2;
+.icon-location{
+    padding: 11px 15px ;
+    background-color: #F2F2F2;
     border-top-left-radius:10px;
     border-bottom-left-radius:10px;
-    background-color: #F2F2F2;
 }
 
 .search-bar2{
@@ -111,12 +108,13 @@ a:hover {
 }
 
 /* Filtres Test */
-.filtres-nav{
+
+.filter-bloc{
     display: flex;
 }
 
 .filtre-h2{
-    margin-top: 18px;
+    margin-top: 2px;
 }
 
 .filtres-nav ul{
@@ -125,21 +123,23 @@ a:hover {
     text-decoration: none;
 }
 
-.filtres-nav li{
+.filter-{
     margin-right: 35px;
+    
 }
 
-.filtres-button{
+.filter-text{
     text-decoration: none;
     color: black;
     border: 1px solid #c5c3c3;
     border-radius: 40px;
-    padding: 13px 17px 13px 55px;
+    padding: 13px 17px 13px 17px;
     font-weight: bold;
     font-size: 13px;
+    margin-left: 15px;
 }
 
-.filtres-button:hover{
+.filter-buttom:hover{
     border: 0px solid red;
     border-radius: 40px;
     padding: 13px 17px 13px 55px;
@@ -147,9 +147,12 @@ a:hover {
     box-shadow: 0px 0px 10px 1px silver;
     text-shadow: 0px 0px 5px  black;
     color: black;
-   
-    
 }
+
+.icon-search{
+    color:
+}
+
 
 /* Filtres */
 
@@ -300,6 +303,9 @@ a:hover {
 .i_info{
     margin-top:8px;
 }
+
+/*-- Icons --*/
+
 
 
   
