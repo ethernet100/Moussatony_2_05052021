@@ -1,4 +1,14 @@
 /* Code generale */
+@media all and (max-width: 500px){
+    #bloc-page{
+        width: auto;
+    }
+    header{
+        flex-direction: column;
+    }
+    
+}
+
 
 @font-face {
     font-family: 'Raleway Regular';
@@ -12,17 +22,21 @@
 }   
 
 #bloc-page{
-    width: 900px;
+    width: 80%;
     margin: auto;
 }
 
 h1{
-    font-size: 18px;
+    font-size: 14px;
 }
 
 h2{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
+}
+
+h3{
+    font-size: 11px;
 }
 
 p{
@@ -35,16 +49,18 @@ p{
 
 .logo-reservia{
     width:55px;
+    
 }
 
 header{   
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 26px; /* Pour avoir de la hauteur dessus les li */
     /* padding doit être bien règler avec padding-top de a:hover */
 }
 
-nav ul{
+nav ul, .filter-bloc{
     display: flex;
     list-style-type: none;
   
@@ -55,21 +71,29 @@ nav li{
     font-size: 13px;
 }
 
-nav a {
+a {
     text-decoration: none;
     color: black;
+    font-size: 10px;
 }
 
-a:hover {
-    border-top: 3px solid #00FC;
-    color: #0065FC;
+a:hover{
+  font-weight: bold;
+  
+}
+
+.nav-hover:hover {
     padding-top: 48px;
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
 }
 
 .nav-sinscrire{
-    color: #0065FC;
     font-weight: bold;
+    color: blue;
 }
+
+
 
 /*-- Recherche--*/
 
@@ -107,204 +131,126 @@ a:hover {
     font-weight: bold;
 }
 
-/* Filtres Test */
+/* Filtres */
 
-.filter-bloc{
-    display: flex;
-}
 
-.filtre-h2{
-    margin-top: 2px;
-}
-
-.filtres-nav ul{
-    display: flex;
-    list-style-type: none;
-    text-decoration: none;
-}
-
-.filter-{
-    margin-right: 35px;
-    
-}
-
-.filter-text{
-    text-decoration: none;
-    color: black;
-    border: 1px solid #c5c3c3;
+.filter-buttom{
+    margin-left: 30px;
+    border: 1px solid #DEEBFF;
     border-radius: 40px;
-    padding: 13px 17px 13px 17px;
-    font-weight: bold;
-    font-size: 13px;
-    margin-left: 15px;
+    padding: 10px 0px;
 }
 
 .filter-buttom:hover{
-    border: 0px solid red;
-    border-radius: 40px;
-    padding: 13px 17px 13px 55px;
+    box-shadow: 0px 0px 5px rgb(20, 9, 9);
+}
+
+.filter-icon:hover{
+    color: green;
+}
+.filter-text:hover{
+    color: green;
+}
+
+.filter-text{
     font-weight: bold;
-    box-shadow: 0px 0px 10px 1px silver;
-    text-shadow: 0px 0px 5px  black;
-    color: black;
+    font-size: 12px;
+    padding: 15px;
 }
-
-.icon-search{
-    color:
-}
-
-
-/* Filtres */
-
-.container{
-    
-    display: flex;
-    margin: 15px;
-    margin-left: -1px;
-}
-
-.filtres{
-    margin-right: 20px;
-    padding-top: 22px;
-}
-
-/* Économique */
-.filter-eco{
-    display: flex;
-    margin: 20px;
-    padding: 4px;
-    height: 33px;
-    width: 140px;
-    border: 1px solid #c5c3c3;
+.filter-icon{
+    padding: 10.5px;
+    background-color: #DEEBFF;
+    color: blue;
     border-radius: 40px;
-    position: relative;
-}
-
-
-.filter-icon {
-    border: 1px solid rgb(230, 230, 230);
-    border-radius: 40px;
-    margin: -5px 0  0 -5px ; /* a voir */
-    width: 40.5px;
-    height: 40.5px;
-    background-size: 50px;
-    background-repeat: no-repeat;
-}
-.filter-eco .filter-icon {
-    
-    background-image:url('images/icones/billet.png') ;
-    
-    /* a voir */
-}
-
-.filter-familial .filter-icon {
-    
-    background-image:url('images/icones/personne.png') ;
-    
-    /* a voir */
-}
-
-.economique{
-    border: 1px solid white;
-    margin-left: 10px;
-    margin-top: 5px;
-    width: 80px;
-    font-weight: bold;
-}
-.container :hover{
-    color: rgb(251, 2, 2);
-    font-size: 13px;
-    text-shadow: 0px 0px 5px   rgb(105, 235, 30);
-    border-top-right-radius: 250px;
-    
-}
-    
-
-
-/* Familial */
-.item2{
-    display: flex;
-    margin: 20px;
-    padding: 4px;
-    height: 33px;
-    width: 115px;
-    border: 1px solid #c5c3c3;
-    border-radius: 40px;
-    position: relative;
-}
-
-
-
-.familial{
-    border: 1px solid white; 
-    margin-left: 10px;
-    margin-top: 5px;
-    width: 50px;
-    font-weight: bold;
-}
-
-/* Romantique */
-.item3{
-    display: flex;
-    margin: 20px;
-    padding: 4px;
-    height: 33px;
-    width: 140px;
-    border: 1px solid #c5c3c3;
-    border-radius: 40px;
-    position: relative;
-}
-
-.rom{
    
-    background-image:url('images/icones/coeur.png') ;
-   
-    
-    
 }
-.romantique{
-    border: 1px solid white;
-    margin-left: 10px;
-    margin-top: 5px;
-    width: 80px;
-    font-weight: bold;
-}
-
-/* Animaux autorisés */
-.item4{
-    display: flex;
-    margin: 20px;
-    padding: 4px;
-    height: 33px;
-    width: 180px;
-    border: 1px solid #c5c3c3;
+.i-info{
+    border: 1px solid #b8c2d1;
+    margin-right: 3px;
+    padding: 1px 4px 1px 4px;
+    color: rgb(67, 67, 236);
+    font-size: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 40px;
-    position: relative;
+}
+.info-ligne{
+   display: flex;
 }
 
-.ani{
-    
-    background-image:url('images/icones/chien.png') ;
-    
-    
+   /*  Hébergements à Marseille  */
+   /*   Style des cases Photo et texte */
+
+.hebergements{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+  
+} 
+.photo-size{
+    width: 150px;
+    height: 80px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
-.animaux{
-    border: 1px solid white;
-    margin-left: 10px;
-    margin-top: 5px;
-    width: 115px;
+em{
     font-weight: bold;
+    font-size: 12px;
+    font-style: normal;
+}
+.hebergements-photos{
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px silver;
+    background-color: white;
+    width: 150px;
+    height: 140px;
+    margin: 10px;
+}
+.h1-margin{
+    margin: 10px;
+
+}
+.h3-margin{
+    margin-top: 1px;
+}
+.p-margin{
+    margin-top: -10px;
+}
+.blue-star{
+    color: blue;
+    margin-bottom: 2px;
+    font-size: 10px;
+}
+.grey-star{
+    color: rgb(211, 201, 201);
 }
 
-.info{
+
+
+.les-plus-populaires{
+    border: 1px solid rgb(25, 0, 255);
+
+}
+
+   /*  Activité à Marseille  */
+
+.activites-marseille{
+    border: 1px solid green;
+}
+   
+
+    /* FOOTER */
+footer {
     display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2;
 }
-
-.i_info{
-    margin-top:8px;
+#footer-nav li{
+    
+    list-style-type: none;
+    margin-right: 6px;
+   
 }
-
-/*-- Icons --*/
 
 
 

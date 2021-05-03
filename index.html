@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/4e707dab61.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
@@ -13,7 +14,7 @@
 
       <!-- HEADER -->
       <header>
-        <div>
+        <div class="bloc-logo-reservia">
           <img class="logo-reservia" src="images/logo/reservia@3x.png" alt="Logo de Reservia"  />
         </div>
         <nav>
@@ -23,11 +24,11 @@
             <li><a class="nav-sinscrire" href="#">S'inscrire</a></li>
           </ul>
         </nav>
+        
       </header>
       
 
-      <!-- MAIN -->
-      <main id="main">
+     
 
       <!-- Recherche -->
       <section>
@@ -66,32 +67,63 @@
       </div>
     
 
-      <!-- Hébergements -->
-      <section>
+      <!-- Hébergements à Marseille -->
+      <section> 
         <div class="hebergements">
+          <h1 class="h1-margin">Hébergements à Marseille</h1>
+          <div class="hebergements-photos">
+            <a href="#" class=""><img class="photo-size" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="" /></a>
+            <h3 class="h3-margin">Auberge la Cannebière</h3>
+            <p class="p-margin">Nuit à partir de <em>25€</em></p>
+            <p><span class="blue-star"><i class="fas fa-star"></i><i  class="fas fa-star"></i><i  class="fas fa-star"></i><i  class="fas fa-star"></i></span><span class="grey-star"><i  class="fas fa-star"></i></span></p>
+          </div>
 
         </div>
 
-        <div class="les_plus_populaires">
+        <div class="les-plus-populaires">
+          <h1>Les plus populaires <i class="fas fa-chart-line"></i></h1>
 
         </div>
       </section>
       
       <!-- Activité à Marseille -->
+      <section class="activites-marseille">
+        <h1>Activité à Marseille</h1>
         <div class="vieux_port"></div>
         <div class="fort_iles"></div>
         <div class="parc_national"></div>
         <div class="notre_dame_etparc"></div>
-      
-      </main>
+      </section>
+     
 
       <!-- FOOTER-->
       <footer>
-        <div class="a_propos"></div>
-        <div class="nos_hebergements"></div>
-        <div class="assistance"></div>
-      </footer>
+        <div id="footer-nav">
+          <ul>
+            <li><h2>À propos</h2></li>
+            <li><a href="#">Fonctionnement du site</a></li>
+            <li><a href="#">Conditions générales de vente</a></li>
+            <li><a href="#">Données et confidentialités</a></li>
+          </ul>
+        </div> 
 
+        <div id="footer-nav">
+          <ul>
+            <li><h2>Nos hébergements</h2></li>
+            <li><a href="#">Charte qualité</a></li>
+            <li><a href="#">Soumettre votre hôtel</a></li>
+          </ul>
+        </div>
+
+        <div id="footer-nav">
+          <ul>
+            <li><h2>Assistance</h2></li>
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Nous contacter</a></li>
+          </ul>
+        </div>
+        
+      </footer>
     </div>
   </body>
 </html>
