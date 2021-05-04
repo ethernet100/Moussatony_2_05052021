@@ -181,7 +181,7 @@ a:hover{
 
 /*  Hébergements à Marseille  */
 
-    /*  Début du Style de présentation des hébergements */
+  /* Début du Style de présentation des hébergements */
 #container, .les-plus-populaires{
     background-color: #F2F2F2;
     border-radius: 10px;
@@ -205,6 +205,11 @@ em{
     width: 158px;
     height: 135px;
     margin: 10px;
+}
+.hebergements-photos:hover, .populaires-photos:hover,
+.activite-photo-cadre-big:hover, .activite-photo-cadre-medium:hover,
+.activite-photo-cadre-small:hover{
+    box-shadow: 0px 0px 10px black;
 }
 .h1-margin{
     margin: 10px;
@@ -234,28 +239,117 @@ em{
 }
 
 
+
 #container{
     display: flex;
     flex-wrap: wrap;
-    height: 400px;
+    height: 350px;
     width: 600px;
-    padding: 40px 8px 40px 8px;
+    padding: 30px 10px;
 }
 
 /*   Les plus populaires  */
 .les-plus-populaires{
     width: 300px;
+    height: 410px;
     margin-left: 20px;
-    padding: 40px 8px 40px 8px;
-
-
+    padding-left: 10px;
+    padding-top: 0px;
 }
+.populaires-photos{
+    display: flex;
+    border: 4px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px silver;
+    background-color: white;
+    width: 220px;
+    height: 85px;
+    margin: 10px;
+}
+.photo-size-populaires{
+    width: 100px;
+    height: 85px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.h1-populaires{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 45px 5px 10px;
+   
+}
+.h1-populaires-chart-line{
+    align-content: center;
+}
+.text-adjustment-populaires{
+    margin: 5px 0 2px 12px;
+}
+
+
 
    /*  Activité à Marseille  */
 
-.activites-marseille{
-    border: 1px solid green;
+.activite-cadre{
+   
+    display: flex;
+    width: 900px;
+    height: 380px;
 }
+
+
+.activite-photo-cadre-big{
+    box-shadow: 0px 0px 10px silver;
+    border-radius: 15px;
+    width: 220px;
+    height: 350px;
+    margin-right: 15px;
+}
+.activite-photo-big{
+    width: 220px;
+    height: 310px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.activite-photo-cadre-medium{
+    box-shadow: 0px 0px 10px silver;
+    border-radius: 15px;
+    width: 220px;
+    height: 180px;
+    margin-right: 15px;
+}
+.activite-photo-medium{
+   
+    width: 220px;
+    height: 150px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.activite-photo-cadre-small{
+    box-shadow: 0px 0px 10px silver;
+    border-radius: 15px;
+    width: 220px;
+    height: 150px;
+}
+#activite-margin-iledufrioul{
+    margin-top: 20px;
+}
+#activite-margin-parc-longchamp{
+    margin-top: 20px;
+}
+
+
+.activite-photo-small{
+    width: 220px;
+    height: 120px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.activite-margin-h3{
+    margin: 6px 0 0 20px;
+}
+
    
 
     /* FOOTER */
@@ -268,7 +362,6 @@ footer {
     
     list-style-type: none;
     margin-right: 6px;
-   
 }
 
 
