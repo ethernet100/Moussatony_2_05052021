@@ -1,14 +1,41 @@
 /* Code generale */
-@media all and (max-width: 500px){
+@media all and (max-width: 991px)
+{
+    h1{ color: red;}
+    #bloc-page{
+       width: auto;
+       text-align: left;
+   }
+   nav{
+       width:auto;
+       text-align: left;
+   }
+   nav ul{
+       flex-direction: column-reverse;
+   }
+   nav li{
+       padding-left: 4px;
+   }
+  
+   
+  
+
+
+  
+
+}
+   
+}
+@media all and (max-width: 768px)
+{
     #bloc-page{
         width: auto;
     }
-    header{
-        flex-direction: column;
-    }
-    
+    footer{
+        display: flex;
+      flex-direction: column;
+  }
 }
-
 
 @font-face {
     font-family: 'Raleway Regular';
@@ -24,7 +51,7 @@
 #bloc-page{
     width: 900px;
     margin: auto;
-    align-content: center;
+    
 }
 
 h1{
@@ -44,8 +71,6 @@ p{
     font-size: 10px;
 }
 
-
-
 /* Header */
 
 .logo-reservia{
@@ -61,11 +86,13 @@ header{
     /* padding doit être bien règler avec padding-top de a:hover */
 }
 
+nav ul, .filter-bloc, .footer-nav li{
+    list-style-type: none;
+}
 nav ul, .filter-bloc{
     display: flex;
-    list-style-type: none;
-  
 }
+
 
 nav li{
     margin-right: 35px;
@@ -94,10 +121,7 @@ a:hover{
     color: blue;
 }
 
-
-
 /*-- Recherche--*/
-
 
 .icon-location{
     padding: 11px 15px ;
@@ -159,10 +183,12 @@ a:hover{
     padding: 15px;
 }
 .filter-icon{
-    padding: 10.5px;
+    padding: 16px 14px 12px 14px;
+  
     background-color: #DEEBFF;
     color: blue;
     border-radius: 40px;
+
    
 }
 .i-info{
@@ -182,9 +208,11 @@ a:hover{
 /*  Hébergements à Marseille  */
 
   /* Début du Style de présentation des hébergements */
-#container, .les-plus-populaires{
+#hebergement-background, .les-plus-populaires{
     background-color: #F2F2F2;
     border-radius: 10px;
+   
+   
 } 
 .photo-size{
     width: 158px;
@@ -211,10 +239,19 @@ em{
 .activite-photo-cadre-small:hover{
     box-shadow: 0px 0px 10px black;
 }
-.h1-margin{
-    margin: 10px;
+#h1-padding{
+   padding: 16px 0 0 22px;
 
+    display: flex;
+    flew
 }
+.hebergement-h2{
+    padding: 0 0 20px 22px; 
+}
+.hebergement-h2:hover{
+    text-shadow: 0px 0px 1px black;
+}
+
 .h3-margin{
     margin-top: 1px;
 }
@@ -235,25 +272,24 @@ em{
 
 .hebergements{
     display: flex;
-    width: 900px;
+    width: auto;
 }
 
-
-
-#container{
+.container{
     display: flex;
     flex-wrap: wrap;
-    height: 350px;
-    width: 600px;
-    padding: 30px 10px;
+    height: 330px;
+    width: 580px;
+    padding: 0px 0px 18px 15px;
 }
 
 /*   Les plus populaires  */
+
 .les-plus-populaires{
-    width: 300px;
-    height: 410px;
+    width: 280px;
+    height: 460px;
     margin-left: 20px;
-    padding-left: 10px;
+    padding-left: 40px;
     padding-top: 0px;
 }
 .populaires-photos{
@@ -264,7 +300,7 @@ em{
     background-color: white;
     width: 220px;
     height: 85px;
-    margin: 10px;
+    margin: 25px 40px 25px 0px;
 }
 .photo-size-populaires{
     width: 100px;
@@ -278,7 +314,6 @@ em{
     justify-content: space-between;
     align-items: center;
     margin: 15px 45px 5px 10px;
-   
 }
 .h1-populaires-chart-line{
     align-content: center;
@@ -287,9 +322,7 @@ em{
     margin: 5px 0 2px 12px;
 }
 
-
-
-   /*  Activité à Marseille  */
+/*  Activité à Marseille  */
 
 .activite-cadre{
    
@@ -297,7 +330,6 @@ em{
     width: 900px;
     height: 380px;
 }
-
 
 .activite-photo-cadre-big{
     box-shadow: 0px 0px 10px silver;
@@ -320,7 +352,6 @@ em{
     margin-right: 15px;
 }
 .activite-photo-medium{
-   
     width: 220px;
     height: 150px;
     border-top-left-radius: 15px;
@@ -350,19 +381,18 @@ em{
     margin: 6px 0 0 20px;
 }
 
+   /* FOOTER */
    
-
-    /* FOOTER */
 footer {
     display: flex;
-    justify-content: space-between;
     background-color: #F2F2F2;
+    width: 920px;
+    margin-bottom: 50px;
 }
-#footer-nav li{
-    
-    list-style-type: none;
-    margin-right: 6px;
+.footer-nav{
+    margin-right: 150px;
 }
+
 
 
 
