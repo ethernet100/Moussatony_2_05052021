@@ -1,41 +1,63 @@
 /* Code generale */
-@media all and (max-width: 991px)
-{
-    h1{ color: red;}
-    #bloc-page{
-       width: auto;
-       text-align: left;
-   }
-   nav{
-       width:auto;
-       text-align: left;
-   }
-   nav ul{
-       flex-direction: column-reverse;
-   }
-   nav li{
-       padding-left: 4px;
-   }
-  
-   
-  
 
-
-  
-
-}
-   
-}
-@media all and (max-width: 768px)
-{
-    #bloc-page{
-        width: auto;
-    }
-    footer{
+@media screen and (max-width: 1050px){
+    
+   h1{
+       color:rgb(236, 67, 213)
+   }
+    .hebergements-arrangement-screen{
         display: flex;
-      flex-direction: column;
-  }
+        flex-wrap: wrap-reverse;
+    }
+    .activite-cadre{
+        border: 1px solid red;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    footer, .activite-cadre {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    
 }
+
+
+@media screen and (max-width: 768px) {
+    h1{
+        color: green;
+    }
+    .filter-bloc{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .filter-buttom{
+        margin: 10px 0 0 10px;
+    }
+    .filter-display-word{
+        display: flex;
+        flex-direction: column;
+    }
+    .filter-bloc{
+    padding-left: 5px;
+    }
+
+
+  
+
+    
+   
+}
+@media screen and (max-width: 480px)
+{
+   h1{
+       color:red;
+   }
+   
+}
+
 
 @font-face {
     font-family: 'Raleway Regular';
@@ -49,13 +71,13 @@
 }   
 
 #bloc-page{
-    width: 900px;
+    width: 80%;
     margin: auto;
     
 }
 
 h1{
-    font-size: 14px;
+    font-size: 18px;
 }
 
 h2{
@@ -82,7 +104,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 26px; /* Pour avoir de la hauteur dessus les li */
+    padding: 24px; /* Pour avoir de la hauteur dessus les li */
     /* padding doit être bien règler avec padding-top de a:hover */
 }
 
@@ -121,6 +143,8 @@ a:hover{
     color: blue;
 }
 
+
+
 /*-- Recherche--*/
 
 .icon-location{
@@ -158,6 +182,9 @@ a:hover{
 
 /* Filtres */
 
+.filter-display-word{
+    display: flex;
+}
 
 .filter-buttom{
     margin-left: 30px;
@@ -327,8 +354,7 @@ em{
 .activite-cadre{
    
     display: flex;
-    width: 900px;
-    height: 380px;
+    margin-bottom: 5%;
 }
 
 .activite-photo-cadre-big{
@@ -386,11 +412,11 @@ em{
 footer {
     display: flex;
     background-color: #F2F2F2;
-    width: 920px;
-    margin-bottom: 50px;
+    width: 100%;
+ 
 }
 .footer-nav{
-    margin-right: 150px;
+    margin: 2% 5% 2% 7%;
 }
 
 

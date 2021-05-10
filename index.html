@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="fr">
+<!-- 
+    Mon premier site dans le pojet 2
+-->
+<html>
   <head>
+    <title>Reservia</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/4e707dab61.js" crossorigin="anonymous"></script>
-    <title>Reservia</title>
   </head>
 
   <body>
@@ -18,7 +20,7 @@
         <div class="bloc-logo-reservia">
           <img class="logo-reservia" src="images/logo/reservia@3x.png" alt="Logo de Reservia"  />
         </div>
-        <nav>
+        <nav class=" nav-reverse-arrangement-media">
           <ul>
             <li><a class="nav-hover" class="nav-hebergement" href="#hebergement-background">Hébergements</a></li>
             <li><a class="nav-hover" class="nav-activites" href="#activite-ancre">Activités</a></li>
@@ -33,34 +35,38 @@
       <section>
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre de ville ou en pleine nature</p>
-
+        
         <form method="get" action="traitement.php">
-            <a href="#"><p><span class="icon-location"><i class="fas fa-map-marker-alt"></i></span><input class="search-bar2"
+            <p><a href="#"><span class="icon-location"><i class="fas fa-map-marker-alt"></i></span><input class="search-bar2"
                type="search"  placeholder=" Marseille, France" size="40" maxlength="10"
-                /><input class="button" type="submit" value="Recherche" /><p></a>
+                /><input class="button" type="submit" value="Recherche" /></a></p>
         </form>
+      
 
       <!-- Filtres -->  
-      <div class="filter-bloc">
+      <div class="filter-display-word">
         <h2 class="filtre-h2">Filtres</h2>
 
-        <div class="filter-buttom"><a href="#">
-          <span class="filter-icon"><i class="fas fa-money-bill-wave"></i></span>
-          <span class="filter-text" href="#">Économique</span></a>
-        </div>
-        <div class="filter-buttom"><a href="#">
-          <span class="filter-icon"><i class="fas fa-child"></i></span>
-          <span class="filter-text" href="#">Familial</a></span>
-        </div>
-        <div class="filter-buttom"><a href="#">
-          <span class="filter-icon"><i class="fas fa-heart"></i></span>
-          <span class="filter-text" href="#">Romantique</a></span>
-        </div>
-        <div class="filter-buttom"><a href="#">
-          <span class="filter-icon"><i class="fas fa-dog"></i></span>
-          <span class="filter-text" href="#">Animaux autorisés</a></span>
+        <div class="filter-bloc">
+          <div class="filter-buttom"><a href="#">
+            <span class="filter-icon"><i class="fas fa-money-bill-wave"></i></span>
+            <span class="filter-text" href="#">Économique</span></a>
+          </div>
+          <div class="filter-buttom"><a href="#">
+            <span class="filter-icon"><i class="fas fa-child"></i></span>
+            <span class="filter-text" href="#">Familial</a></span>
+          </div>
+          <div class="filter-buttom"><a href="#">
+            <span class="filter-icon"><i class="fas fa-heart"></i></span>
+            <span class="filter-text" href="#">Romantique</a></span>
+          </div>
+          <div class="filter-buttom"><a href="#">
+            <span class="filter-icon"><i class="fas fa-dog"></i></span>
+            <span class="filter-text" href="#">Animaux autorisés</a></span>
+          </div>
         </div>
       </div>
+
       <div class="info-ligne">
         <span class="i-info"><i class="fas fa-info"></i></span>
         <a href="#"><p>Plus de 500 logements sont disponibles dans cette ville<p></a>
@@ -73,6 +79,7 @@
       <!-- Section(2) "Hébergements, Les plus populaires  -->
    
     <section>
+    <div class="hebergements-arrangement-screen"> 
       <div class="hebergements">
         <div id="hebergement-background">
         <h1 id="h1-padding">Hébergements à Marseille</h1>
@@ -172,6 +179,7 @@
           </div>
         </div>
       </div> 
+    </div>
     </section>
       
       <!-- Section(4) "Activité à Marseille" -->
@@ -179,7 +187,7 @@
       <h1 id="activite-ancre">Activités à Marseille</h1>
     
       <div class="activite-cadre">
-
+        
         <div class="activite-photo-cadre-big">
           <a href="#"><img class="activite-photo-big" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="#"/>
           <h3 class="activite-margin-h3">Vieux Port</h3></a>
@@ -214,6 +222,7 @@
 
       </div>
     </section>
+  </div>
 
       <!--"FOOTER" --> 
       <footer>
@@ -243,6 +252,6 @@
         </div>
       </footer>
     
-    </div>
+    
   </body>
 </html>
