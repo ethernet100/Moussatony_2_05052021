@@ -1,3 +1,5 @@
+
+
 /* Code generale */
 
 @media screen and (max-width: 1050px){
@@ -36,11 +38,17 @@
     
     .les-plus-populaires{
         margin-bottom: 3%;
+        display: flex;
     }
-  
-    .icon-recherche-media{
+    .populaires-photos {
+        margin: 100%;
 
     }
+    .text-adjustment-populaires {
+        margin: 100%;
+    }
+   
+    
      
  }
  
@@ -68,7 +76,6 @@
         flex-direction: column;
         padding: 0px 0px 18px 15px;
     }
-   
 
     
    
@@ -78,15 +85,16 @@
 
  @media screen and (max-width: 480px){
     h1{
-        color:rgb(214, 11, 11);
+        color:red;
     }
-    .sinscrire-position-media{
-        position: absolute;
-        top: 50px;
-        right: 5px;
+    .hebergements-photos{
+       
+        width: 100%;
+        height: 200px;
+       
     }
-  
-    
+   
+
     
 
     
@@ -101,11 +109,15 @@
     
  *{
      font-family: 'Raleway Regular', Arial, sans-serif;
- }   
+ } 
  
- .bloc-page{
-     width: auto;
-     margin: 5%;
+ body {
+     width: 100%;
+ }
+ 
+ #bloc-page{
+     width: 95%;
+     margin: auto;
      
  }
  
@@ -114,22 +126,22 @@
  }
  
  h2{
-     font-size: 18px;
+     font-size: 12px;
      font-weight: bold;
  }
  
  h3{
-     font-size: 16px;
+     font-size: 11px;
  }
  
  p{
-     font-size: 14px;
+     font-size: 10px;
  }
  
  /* Header */
  
  .logo-reservia{
-     width:80px;
+     width:30%;
      
  }
  
@@ -175,8 +187,6 @@
      font-weight: bold;
      color: blue;
  }
-
- 
  
  
  
@@ -269,15 +279,14 @@
  
  /*  Hébergements à Marseille  */
  
-   /* Début du Style de présentation des hébergements */
+   /* HEBERGEMENTS */
+
  #hebergement-background, .les-plus-populaires{
      background-color: #F2F2F2;
      border-radius: 10px;
-    
-    
- } 
+} 
  .photo-size{
-     width: 158px;
+     width: 100%;
      height: 80px;
      border-top-left-radius: 10px;
      border-top-right-radius: 10px;
@@ -292,7 +301,7 @@
      border-radius: 10px;
      box-shadow: 0px 0px 7px silver;
      background-color: white;
-     width: 158px;
+     width: 28%;
      height: 135px;
      margin: 10px;
  }
@@ -301,7 +310,7 @@
  .activite-photo-cadre-small:hover{
      box-shadow: 0px 0px 10px black;
  }
- .h2-padding{
+ #h1-padding{
     padding: 16px 0 0 22px;
     display: flex;
      
@@ -327,39 +336,37 @@
  .grey-star{
      color: rgb(211, 201, 201);
  }
-     /*   fin du Style de présentation des hébergements */
- 
-     /*   Début mise en page d'Hébergement à Marseille  */
- 
+    
  .hebergements{
      display: flex;
      width: auto;
  }
  
  .container{
-     display: flex;
+    display: flex;
      flex-wrap: wrap;
      height: auto;
-     width: 580px;
+     width: 100%;
      padding: 0px 0px 18px 15px;
  }
  
  /*   Les plus populaires  */
  
  .les-plus-populaires{
-     width: 280px;
+     width: 30%;
      height: auto;
      margin-left: 20px;
      padding-left: 40px;
      padding-top: 0px;
  }
  .populaires-photos{
+    
      display: flex;
      border: 4px solid white;
      border-radius: 10px;
      box-shadow: 0px 0px 7px silver;
      background-color: white;
-     width: 220px;
+     width: 90%;
      height: 85px;
      margin: 25px 40px 25px 0px;
  }
@@ -388,18 +395,19 @@
  .activite-cadre{
     
      display: flex;
-     margin-bottom: 5%;
+   
+     margin: 2%;
  }
  
  .activite-photo-cadre-big{
      box-shadow: 0px 0px 10px silver;
      border-radius: 15px;
-     width: 220px;
+     width: 250px;
      height: 350px;
      margin-right: 15px;
  }
  .activite-photo-big{
-     width: 220px;
+     width: 250px;
      height: 310px;
      border-top-left-radius: 15px;
      border-top-right-radius: 15px;
@@ -407,12 +415,12 @@
  .activite-photo-cadre-medium{
      box-shadow: 0px 0px 10px silver;
      border-radius: 15px;
-     width: 220px;
+     width: 250px;
      height: 180px;
      margin-right: 15px;
  }
  .activite-photo-medium{
-     width: 220px;
+     width: 250px;
      height: 150px;
      border-top-left-radius: 15px;
      border-top-right-radius: 15px;
@@ -420,8 +428,14 @@
  .activite-photo-cadre-small{
      box-shadow: 0px 0px 10px silver;
      border-radius: 15px;
-     width: 220px;
+     width: 250px;
      height: 150px;
+ }
+ .activite-photo-small{
+    width: 250px;
+    height: 120px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
  }
  #activite-margin-iledufrioul{
      margin-top: 20px;
@@ -431,12 +445,8 @@
  }
  
  
- .activite-photo-small{
-     width: 220px;
-     height: 120px;
-     border-top-left-radius: 15px;
-     border-top-right-radius: 15px;
- }
+ 
+ 
  .activite-margin-h3{
      margin: 6px 0 0 20px;
  }
@@ -452,5 +462,3 @@
  .footer-nav{
      margin: 2% 5% 2% 7%;
  }
- 
- 
