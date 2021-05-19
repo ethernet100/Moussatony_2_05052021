@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/4e707dab61.js" crossorigin="anonymous"></script>
   </head>
+  
 
   <body>
     <div id="bloc-page">
@@ -38,8 +39,8 @@
         
         <form method="get" action="traitement.php">
             <p><a href="#"><span class="icon-location"><i class="fas fa-map-marker-alt"></i></span></a><input class="search-bar2"
-               type="search"  placeholder=" Marseille, France" size="40" maxlength="10"/><input class="button" type="submit" value="Recherche" /></p>
-        </form>
+               type="search"  placeholder=" Marseille, France" size="40" maxlength="10"/><button class="button boutton-recherche" type="button">Recherche</button><button class="button icon-search" type="button"><i class="fas fa-search"></i></button></p>
+        </form>                                                                          
       
 
         <!-- Filtres -->  
@@ -136,11 +137,14 @@
        
     
           <div class="les-plus-populaires">
+            <div>
             <div class="h1-populaires">
               <h1>Les plus populaires </h1>
               <span class="h1-populaires-chart-line"><i class="fas fa-chart-line"></i></span>
             </div>
+            </div> 
 
+            <div class="populaires-arrangement">
             <div class="populaires-photos">
               <div>
                 <a href="#"><img class="photo-size-populaires" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" /></a>
@@ -175,6 +179,7 @@
             </div>
           </div>
         </div> 
+        </div>
       </section>
       
          <!-- Section(4) "Activité à Marseille" -->
