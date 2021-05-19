@@ -58,10 +58,12 @@
  
  
  @media screen and (max-width: 768px) {
+     
      h1{
          color: green;
      }
-     .filter-bloc{
+     
+    .filter-bloc{
          display: flex;
          flex-wrap: wrap;
      }
@@ -96,25 +98,37 @@
     h1{
         color:red;
     }
+
+    .nav-hover:hover {
+        padding-bottom: 10px;
+        border-bottom: 3px solid #0065FC;
+     
+        border-top: 3px solid #f4f5f7;
+        
+    }
+
     .hebergements-photos{
        
         width: 100%;
         height: 200px;
     }
+
     .nav-sinscrire {
         position: absolute;
         top: 48px;
         right: 15px;
     }
+
     .boutton-recherche {
         visibility: hidden;
     }
+
     .icon-search {
         visibility:visible;
     }
+    
    
 
-    
 
     
 }
